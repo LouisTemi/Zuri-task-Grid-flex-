@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;500;700;900&family=Lexend+Deca:wght@100;200;300;400;500;700;900&display=swap');
+
+a{
+    font-size: 1.5em;
+    color: black;
+    font-weight: bolder;
+}
+a:hover{
+    color: brown;
+}
+.temp{
+    color: green;
+}
+.whole-content{
+    display: flex;
+    width: 750px;
+    justify-content: center;
+    margin: auto auto;
+    color: hsl(0, 0%, 100%, 0.75);
+    border-collapse: separate;
+}
+.first-column{
+    background-color: hsl(31, 77%, 52%);
+    width: 31%;    
+    border-radius: 5px 0 0 5px;
+}
+
+.second-column{
+    width: 31%;
+    background-color: hsl(184, 100%, 22%);
+}
+
+.third-column{
+    width: 31%;
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 5px 5px 0;
+}
+.column-items{
+    padding: 17% 10%;
+}
+.header{
+    margin-top: 30px;
+    font-size: 2em;
+    font-family: "Big Shoulders Display", cursive;
+    font-weight: 700;
+}
+.text{
+    margin-top: 30px;
+    font-size: .84em;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 300;
+}
+.button{
+    margin-top: 60px;
+    text-align: center;
+    width: 120px;
+    height: 30px;
+    border: transparent;
+    border-radius: 20px;
+    background-color: hsl(0, 0%, 95%);
+    transition: 0.5s;
+    cursor: pointer;
+}
+.button:focus{
+    outline: none;
+}
+.button:hover{
+    background-color: transparent;
+    border: solid 1px hsl(0, 0%, 95%);
+}
+.button:hover > span{
+    color: hsl(0, 0%, 95%); 
+}
+.learn-more-1{
+    color: hsl(31, 77%, 52%);
+}
+.learn-more-2{
+    color: hsl(184, 100%, 22%);
+}
+.learn-more-3{
+    color: hsl(179, 100%, 13%); 
+}
+
+@media (max-width:450px){
+    .whole-content{
+        width: 250px;
+        flex-direction: column;
+    }
+    .first-column, .second-column, .third-column{
+        width: 100%;
+    }
+    .first-column{
+        border-radius: 5px 5px 0 0;
+    }
+    .third-column{
+        border-radius: 0 0 5px 5px;
+    }
+}

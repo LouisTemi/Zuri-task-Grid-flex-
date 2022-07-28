@@ -1,0 +1,55 @@
+body{
+    background-color: darkslateblue;
+}
+a{
+    font-size: 1.5em;
+    color: black;
+    font-weight: bolder;
+}
+a:hover{
+    color: brown;
+}
+.temp{
+    color: green;
+}
+.wrapper{
+    display: grid;
+    place-items: center;
+    min-height: 90vh;
+}
+.container{
+    width: 700px;
+    display: grid;
+    gap: 10px;
+}
+.top-column{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+}
+.bottom-column{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 10px;
+}
+.red{
+    background-color: red;
+    height: px;
+}
+.yellow{
+    background-color: yellow;
+    height: 150px;
+}
+.green{
+    background-color: green;
+    height: 150px;
+}
+.blue-wrapper{
+    display: grid;
+    gap: 10px;
+}
+.blue{
+    background-color: blue;
+    height: 70px;
+   
+}
